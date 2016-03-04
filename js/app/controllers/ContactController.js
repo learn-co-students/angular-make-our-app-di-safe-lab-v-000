@@ -1,8 +1,8 @@
 function ContactController(random, word) {
-	$scope.name = 'Bill Gates';
+	random.name = 'Bill Gates';
 
-	$timeout(function () {
-		$timeout.name = 'Steve Jobs';
+	word(function () {
+		word.name = 'Steve Jobs';
 	}, 5000);
 }
 
