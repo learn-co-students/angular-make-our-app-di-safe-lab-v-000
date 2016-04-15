@@ -1,7 +1,7 @@
 function ContactController(a, b) {
   a.name = "Bill Gates";
 	b(function () {
-		$scope.name = 'Steve Jobs';
+		a.name = 'Steve Jobs';
 	}, 5000);
 }
 
