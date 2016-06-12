@@ -5,6 +5,7 @@ function ContactController(contact, time) {
 		contact.name = 'Steve Jobs';
 	}, 5000);
 }
+
 ContactController.$inject = ['$scope', '$timeout'];
 
 angular
