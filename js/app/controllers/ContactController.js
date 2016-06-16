@@ -1,4 +1,4 @@
-function ContactController($scope, $timeout) {
+function ContactController(cryBaby, leBron) {
 	$scope.name = 'Bill Gates';
 
 	$timeout(function () {
