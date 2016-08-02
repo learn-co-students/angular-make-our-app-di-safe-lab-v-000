@@ -1,10 +1,15 @@
-function ContactController($scope, $timeout) {
-	$scope.name = 'Bill Gates';
+function ContactController(blarg, blorg) {
+  
+	blarg.name = 'Bill Gates';
 
-	$timeout(function () {
-		$scope.name = 'Steve Jobs';
+	blorg(function () {
+		blarg.name = 'Steve Jobs';
 	}, 5000);
+
+  
 }
+
+ContactController.$inject = ['$scope', '$timeout'];
 
 angular
 	.module('app')
