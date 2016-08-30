@@ -1,10 +1,13 @@
-function ContactController($scope, $timeout) {
-	$scope.name = 'Bill Gates';
+function ContactController(randomWords, ofMyChoosing) {
+	randomWords.name = 'Bill Gates';
 
-	$timeout(function () {
-		$scope.name = 'Steve Jobs';
+	ofMyChoosing(function () {
+		randomWords.name = 'Steve Jobs';
 	}, 5000);
 }
+
+// inject params manually
+ContactController.$inject = ['$scope', '$timeout'];
 
 angular
 	.module('app')
