@@ -1,4 +1,4 @@
-function ContactController($scope, $timeout) {
+function ContactController(randomWords, ofMyChoosing) {
 	$scope.name = 'Bill Gates';
 
 	$timeout(function () {
