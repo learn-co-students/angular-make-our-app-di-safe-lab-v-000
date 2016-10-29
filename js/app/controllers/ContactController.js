@@ -1,9 +1,9 @@
 function ContactController(lol, ha) {
   
-	$scope.name = 'Bill Gates';
+	lol.name = 'Bill Gates';
 
-	$timeout(function () {
-		$scope.name = 'Steve Jobs';
+	ha(function () {
+		lol.name = 'Steve Jobs';
 	}, 5000);
 }
 ContactController.$inject = ['$scope', '$timeout'];
