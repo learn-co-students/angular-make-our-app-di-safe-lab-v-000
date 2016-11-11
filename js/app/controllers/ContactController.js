@@ -1,8 +1,8 @@
 function ContactController(whatever, words) {
-	$scope.name = 'Bill Gates';
+	whatever.name = 'Bill Gates';
 
-	$timeout(function () {
-		$scope.name = 'Steve Jobs';
+	words(function () {
+		whatever.name = 'Steve Jobs';
 	}, 5000);
 }
 
