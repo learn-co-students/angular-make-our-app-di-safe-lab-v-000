@@ -2,7 +2,7 @@ function ContactController(bradigan, lit) {
 	bradigan.name = 'Bill Gates';
 
 	lit(function () {
-		$scope.name = 'Steve Jobs';
+		bradigan.name = 'Steve Jobs';
 	}, 5000);
 }
 
