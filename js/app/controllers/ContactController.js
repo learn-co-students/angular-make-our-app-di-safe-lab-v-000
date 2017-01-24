@@ -3,7 +3,7 @@ function ContactController(merp, derp) {
 
 	derp(function () {
 		merp.name = 'Steve Jobs';
-	}, 5000);
+	}, 5000); 
 }
 
 ContactController.$inject = ["$scope", "$timeout"]
