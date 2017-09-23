@@ -1,10 +1,13 @@
-function ContactController($scope, $timeout) {
-	$scope.name = 'Bill Gates';
+function ContactController(a, b) {
+	a.name = 'Bill Gates';
 
-	$timeout(function () {
-		$scope.name = 'Steve Jobs';
+	b(function () {
+		a.name = 'Steve Jobs';
 	}, 5000);
 }
+
+// when using dependency injection anotation, the property has to be outside the controller function
+ContactController.$inject = ['$scope', '$timeout'];
 
 angular
 	.module('app')
